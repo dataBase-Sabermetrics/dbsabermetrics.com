@@ -7,7 +7,8 @@ const navigation = [
   { name: 'Product', href: '/product/' },
   { name: 'About', href: '/about/' },
   { name: 'Testimonials', href: '/testimonials/' },
-  { name: 'Blog', href: '#' },
+  { name: 'Blog', href: '/blog/' },
+  { name: 'Signup', href: '/pricing/' },
   { name: 'Contact', href: '/contact/' },
 ]
 
@@ -35,7 +36,7 @@ const mobileMenuOpen = ref(false)
             <a v-for="item in navigation" :key="item.name" :href="item.href" class="text-sm font-semibold leading-6 text-white">{{ item.name }}</a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="https://www.dbaseanalytics.com/" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://www.dbaseanalytics.com/" class="text-sm font-semibold leading-6 text-white" target="_blank">Log in <span aria-hidden="true">&rarr;</span></a>
           </div>
         </nav>
         <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -57,7 +58,7 @@ const mobileMenuOpen = ref(false)
                   <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">{{ item.name }}</a>
                 </div>
                 <div class="py-6">
-                  <a href="https://www.dbaseanalytics.com/" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">Log in</a>
+                  <a href="https://www.dbaseanalytics.com/" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800" target="_blank">Log in</a>
                 </div>
               </div>
             </div>
