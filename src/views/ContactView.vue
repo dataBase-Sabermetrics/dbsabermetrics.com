@@ -9,6 +9,11 @@ const open = ref(false);
 const openDialog = () => {
     open.value = true;
 }
+
+const handleSubmit = () => {
+    // Handle form submission here
+    openDialog();
+}
 </script>
 
 <template>
@@ -19,7 +24,8 @@ const openDialog = () => {
             <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">Let's Get Started!</h2>
             <p class="mt-2 text-lg leading-8 text-gray-300">We are actively onboarding teams to use our tool for free. Don't miss out, reach out!</p>
         </div>
-        <form class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form @submit.prevent="handleSubmit" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <input type="hidden" name="form-name" value="contact" />
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
                 <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-300">First name</label>
@@ -34,9 +40,9 @@ const openDialog = () => {
                 </div>
             </div>
             <div class="sm:col-span-2">
-                <label for="company" class="block text-sm font-semibold leading-6 text-gray-300">Team</label>
+                <label for="team" class="block text-sm font-semibold leading-6 text-gray-300">Team</label>
                 <div class="mt-2.5">
-                <input type="text" name="company" id="company" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input type="text" name="team" id="team" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
@@ -68,7 +74,7 @@ const openDialog = () => {
             </div>
             </div>
             <div class="mt-10">
-            <button @click.prevent="openDialog" type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+            <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
             </div>
         </form>
         </div>
