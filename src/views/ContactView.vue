@@ -1,16 +1,31 @@
 <script setup>
+import { ref } from 'vue'
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 import MainLayout from '../layouts/MainLayout.vue';
+import Popup from '../components/Popup.vue';
+
+const open = ref(false);
+
+const openDialog = () => {
+    open.value = true;
+}
+
+const handleSubmit = () => {
+    // Handle form submission here
+    openDialog();
+}
 </script>
 
 <template>
     <MainLayout>
+    <Popup :open="open" @close="openDialog = false"/>
         <div class="isolate px-6 py-24 sm:py-32 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">Contact sales</h2>
-            <p class="mt-2 text-lg leading-8 text-gray-300">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+            <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">Let's Get Started!</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-300">We are actively onboarding teams to use our tool for free. Don't miss out, reach out!</p>
         </div>
-        <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20" netlify>
+        <form @submit.prevent="handleSubmit" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <input type="hidden" name="form-name" value="contact" />
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
                 <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-300">First name</label>
@@ -25,9 +40,9 @@ import MainLayout from '../layouts/MainLayout.vue';
                 </div>
             </div>
             <div class="sm:col-span-2">
-                <label for="company" class="block text-sm font-semibold leading-6 text-gray-300">Team</label>
+                <label for="team" class="block text-sm font-semibold leading-6 text-gray-300">Team</label>
                 <div class="mt-2.5">
-                <input type="text" name="company" id="company" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input type="text" name="team" id="team" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
