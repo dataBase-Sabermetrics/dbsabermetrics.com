@@ -10,10 +10,9 @@ const openDialog = () => {
     open.value = true;
 }
 
-const handleSubmit = () => {
-    // Handle form submission here
+const handleSubmit = async () => {
     openDialog();
-}
+};
 </script>
 
 <template>
@@ -24,7 +23,7 @@ const handleSubmit = () => {
             <h2 class="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">Let's Get Started!</h2>
             <p class="mt-2 text-lg leading-8 text-gray-300">We are actively onboarding teams to use our tool for free. Don't miss out, reach out!</p>
         </div>
-        <form @submit.prevent="handleSubmit" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form @submit.prevent="handleSubmit" enctype="application/x-www-form-urlencoded" name="contact" id="contactForm" method="post" data-netlify="true" data-netlify-honeypot="bot-field" class="mx-auto mt-16 max-w-xl sm:mt-20">
             <input type="hidden" name="form-name" value="contact" />
             <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -74,7 +73,7 @@ const handleSubmit = () => {
             </div>
             </div>
             <div class="mt-10">
-            <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+            <button type="submit" id="formSubmit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
             </div>
         </form>
         </div>
