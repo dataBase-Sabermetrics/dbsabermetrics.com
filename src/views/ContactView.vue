@@ -13,6 +13,11 @@ const openDialog = () => {
 
 const formData = ref({
     email: null,
+    first_name: null,
+    last_name: null,
+    team: null,
+    phone_number: null,
+    message: null,
 });
 
 const encode = (data) => {  
@@ -25,6 +30,7 @@ const encode = (data) => {
     return formData;
 };
 
+// Remember: This form will always fail in local cause it depends on Netlify's server functions 
 const handleSubmit = (e) => {
     const axiosConfig = {
         header: { "Content-Type": "application/x-www-form-urlencoded" }
@@ -60,25 +66,25 @@ const handleSubmit = (e) => {
             <div>
                 <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-300">First name</label>
                 <div class="mt-2.5">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full bg-gray-200/50 rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input v-model="formData.first_name" type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full bg-gray-200/50 rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div>
                 <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-300">Last name</label>
                 <div class="mt-2.5">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input v-model="formData.last_name" type="text" name="last-name" id="last-name" autocomplete="family-name" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
                 <label for="team" class="block text-sm font-semibold leading-6 text-gray-300">Team</label>
                 <div class="mt-2.5">
-                <input type="text" name="team" id="team" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input v-model="formData.team" type="text" name="team" id="team" autocomplete="organization" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
                 <label for="email" class="block text-sm font-semibold leading-6 text-gray-300">Email</label>
                 <div class="mt-2.5">
-                <input type="email" name="email" id="email" autocomplete="email" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input v-model="formData.email" type="email" name="email" id="email" autocomplete="email" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
@@ -93,13 +99,13 @@ const handleSubmit = (e) => {
                     </select>
                     <ChevronDownIcon class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400" aria-hidden="true" />
                 </div>
-                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <input v-model="formData.phone_number" type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block text-sm font-semibold leading-6 text-gray-300">Message</label>
                 <div class="mt-2.5">
-                <textarea name="message" id="message" rows="4" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                <textarea v-model="formData.message" name="message" id="message" rows="4" class="block bg-gray-200/50 w-full rounded-md border-0 px-3.5 py-2 text-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                 </div>
             </div>
             </div>
