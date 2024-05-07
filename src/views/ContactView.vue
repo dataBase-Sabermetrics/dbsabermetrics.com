@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+import axios from 'axios';
 import MainLayout from '../layouts/MainLayout.vue';
 import Popup from '../components/Popup.vue';
 
@@ -10,8 +11,38 @@ const openDialog = () => {
     open.value = true;
 }
 
-const handleSubmit = async () => {
-    openDialog();
+const formData = ref({
+    email: null,
+});
+
+const encode = (data) => {  
+    const formData = new FormData();
+    
+    for (const key of Object.keys(data)) {
+        formData.append(key, data[key]);
+    }
+    
+    return formData;
+};
+
+const handleSubmit = (e) => {
+    const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" }
+    };
+
+    axios.post(
+        location.href, 
+        encode({
+            'form-name': e.target.getAttribute("name"),
+            ...formData.value,
+        }),
+        axiosConfig
+    )
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
+    .finally(() => {
+        openDialog();
+    });
 };
 </script>
 
