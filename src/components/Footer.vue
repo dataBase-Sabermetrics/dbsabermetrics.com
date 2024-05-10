@@ -3,10 +3,7 @@ import { defineComponent, h } from 'vue'
 
 const navigation = {
   support: [
-    { name: 'Pricing', href: '/pricing/' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: 'Tutorials', href: 'https://www.youtube.com/@dataBaseAnalytics' },
   ],
   social: [
     {
