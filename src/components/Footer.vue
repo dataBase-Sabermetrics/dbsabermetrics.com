@@ -84,7 +84,7 @@ const navigation = {
       <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <div class="space-y-8">
-            <img class="h-12" src="../assets/dataBASE-alt.png" alt="Logo" />
+            <img class="h-12" src="../assets/dataBase-logo-white.png" alt="Logo" />
             <p class="text-sm leading-6 text-gray-300">And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him. Colossians 3:17</p>
             <div class="flex space-x-6">
               <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400" target="_blank">
