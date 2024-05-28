@@ -8,8 +8,8 @@
       <div class="py-24 sm:py-32 lg:pb-40">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Redefined Player Development</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-300">With dataBase Sabermetrics, you don't need any fancy pieces of equipment to gain pro-level statistics on your pitching staff. Don't get left behind, click below to get started!</p>
+            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Player Development Redefined</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-300">DataBase Sabermetrics delivers the intuitive pitch-tracking software and advanced analytics needed to bring your team to the next level. Get in the game, click below to get started!</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
               <a href="/contact/" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
               <a href="/product/" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>

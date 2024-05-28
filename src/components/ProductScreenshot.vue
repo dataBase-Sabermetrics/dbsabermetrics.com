@@ -1,12 +1,18 @@
 <script setup>
-import { CheckIcon, CloudArrowUpIcon, DeviceTabletIcon } from '@heroicons/vue/20/solid'
+import { CheckIcon, CloudArrowUpIcon, DeviceTabletIcon, ChartBarIcon } from '@heroicons/vue/20/solid'
 
 const features = [
   {
-    name: 'Only 5 Fields to Fill Out for Each Pitch.',
+    name: 'Only 4 Fields to Fill Out for Each Pitch.',
     description:
-      'Simplicity is what we are priding our product on. The process is smooth and simple, and you can track your pitches in no time.',
+      'We pride ourselves on simplicity. We have created a friction-less pitch tracking software that can be done with ease in real time. ',
     icon: CheckIcon,
+  },
+  {
+    name: 'Hundreds of Custom statistics.',
+    description: 
+      'dataBase automatically calculates out hundreds of metrics and advanced statistics that can be used to inform player development, and if that is not enough there is the capability to create your own custom statistics',
+    icon: ChartBarIcon,
   },
   {
     name: 'Mobile Friendly.',
@@ -14,8 +20,9 @@ const features = [
     icon: DeviceTabletIcon,
   },
   {
-    name: 'Data Security.',
-    description: 'Your data is safe with us and will be at the tip of your fingers whenever you need it.',
+    name: 'Player and Team Development.',
+    description: 
+      'Instantly gain insights into individual player and overall team season-long statistical trends that inform effective in-game decisions.',
     icon: CloudArrowUpIcon,
   },
 ]
@@ -27,9 +34,9 @@ const features = [
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div class="lg:pr-8 lg:pt-4">
             <div class="lg:max-w-lg">
-              <h2 class="text-base font-semibold leading-7 text-indigo-400">Be Better</h2>
+              <h2 class="text-base font-semibold leading-7 text-indigo-400">The dataBase difference</h2>
               <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better way to track pitches</p>
-              <p class="mt-6 text-lg leading-8 text-gray-300">We all know what it's like to track a hundred pitches in a single game, take a glance at the sheet, and then throw it away. Using dataBase makes it easy to turn that data into actionable insights.</p>
+              <p class="mt-6 text-lg leading-8 text-gray-300">The days of pen-to-paper charts are over. Our innovative pitch tracking software crunches numbers and produces advanced data so you don’t have to.</p>
               <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                   <dt class="inline font-semibold text-white">
