@@ -10,7 +10,7 @@ const features = [
   },
   {
     name: 'Hundreds of Custom statistics.',
-    description: 
+    description:
       'dataBase automatically calculates out hundreds of metrics and advanced statistics that can be used to inform player development, and if that is not enough there is the capability to create your own custom statistics',
     icon: ChartBarIcon,
   },
@@ -18,12 +18,6 @@ const features = [
     name: 'Mobile Friendly.',
     description: 'Computer, Phone, Tablet, you name it. Our product is designed to be used on the web on any device.',
     icon: DeviceTabletIcon,
-  },
-  {
-    name: 'Player and Team Development.',
-    description: 
-      'Instantly gain insights into individual player and overall team season-long statistical trends that inform effective in-game decisions.',
-    icon: CloudArrowUpIcon,
   },
 ]
 </script>
