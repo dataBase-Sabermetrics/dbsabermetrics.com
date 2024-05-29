@@ -29,7 +29,7 @@ const people = [
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
           <p class="mt-4 text-lg leading-8 text-gray-400">Ball Players with a passion for data and tech</p>
         </div>
-        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-8">
           <li v-for="person in people" :key="person.name" class="rounded-2xl bg-gray-800 px-8 py-10">
             <img class="mx-auto h-48 w-42 rounded-full md:h-56 md:w-50" :src="person.imageUrl" alt="" />
             <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{{ person.name }}</h3>
