@@ -30,7 +30,9 @@ const features = [
             <div class="lg:max-w-lg">
               <h2 class="text-base font-semibold leading-7 text-indigo-400">The dataBase difference</h2>
               <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better way to track pitches</p>
-              <p class="mt-6 text-lg leading-8 text-gray-300">The days of pen-to-paper charts are over. Our innovative pitch tracking software crunches numbers and produces advanced data so you don’t have to.</p>
+              <p class="mt-6 text-lg leading-8 text-gray-300">
+              The days of pen-to-paper charts are over. Our innovative pitch tracking software crunches numbers and produces advanced data so you don’t have to.
+              </p>
               <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 <div v-for="feature in features" :key="feature.name" class="relative pl-9">
                   <dt class="inline font-semibold text-white">
