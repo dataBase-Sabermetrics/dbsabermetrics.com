@@ -6,21 +6,21 @@ const features = [
     name: 'Excel Downloads',
     description:
       'We despise those who safeguard data! So, we made it easy for you to download your data in Excel format and to do whatever you want with it.',
-    href: '#',
+    href: '/contact/',
     icon: FolderArrowDownIcon,
   },
   {
     name: 'Custom Stats',
     description:
-      "Don't see what you need? We have you covered. Our custom stats feature allows you to come up with your own stats.",
-    href: '#',
+      "Don't see what you need? We have you covered. Our custom stats feature allows you to build your own stats.",
+    href: '/contact/',
     icon: ChartBarIcon,
   },
   {
     name: 'Access to Scouting Tools',
     description:
-      'Are you a college coach looking to find out more about a player? Our scouting tools are here to help you.',
-    href: '#',
+      'Coming Soon: Are you a college coach looking to find out more about a player? Our scouting tools are here to help you.',
+    href: '/contact/',
     icon: EyeIcon,
   }
 ]
@@ -32,12 +32,8 @@ const features = [
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
           <h2 class="text-base font-semibold leading-7 text-indigo-400">You're in control</h2>
-          <div class="flex flex-row">
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Your data is </p>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl italic">your</p>
-            <p class="text-3xl font-bold tracking-tight text-white sm:text-4xl">data</p>
-          </div>
-        <p class="mt-6 text-lg leading-8 text-gray-300">We know how valuable data is in the world of baseball, today. That's why you are in the driver seat with your data when using dataBase Sabermetrics.</p>
+          <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Your data is your data.</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300">Data has never been more valuable in baseball than it is today. That is why your data will be safe and readily accessible when you use dataBase Sabermetrics</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
