@@ -12,14 +12,14 @@ const features = [
   {
     name: 'Custom Stats',
     description:
-      "Don't see what you need? We have you covered. Our custom stats feature allows you to build your own stats.",
+      "Don't see what you need? We have you covered. Our custom stats feature will allow you to build your own stats.",
     href: '/contact/',
     icon: ChartBarIcon,
   },
   {
     name: 'Access to Scouting Tools',
     description:
-      'Coming Soon: Are you a college coach looking to find out more about a player? Our scouting tools are here to help you.',
+      'Coming Soon: Are you a college coach looking to find out more about a player? Check our road map for our recruiting plans.',
     href: '/contact/',
     icon: EyeIcon,
   }

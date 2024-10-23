@@ -11,7 +11,7 @@ import MainLayout from '../layouts/MainLayout.vue';
             <img class="h-12 self-start" src="../assets/SuncoastLogo.png" alt="" />
             <figure class="mt-10 flex flex-auto flex-col justify-between">
               <blockquote class="text-lg leading-8 text-white">
-                <p>“There is nothing out there like dataBase. Trackman, Rapsodo, and other ball-flight technology cost tens of thousands of dollars that none of us have at the high school level. And even those products don’t give us the necessary insights that we’ve gotten at dataBase at a fraction of the cost.”</p>
+                <p>“It's been great getting in early with dataBase. Trackman, Rapsodo, and other ball-flight technology cost tens of thousands of dollars that none of us have at the high school level. And even those products don’t give us the necessary insights that we’ve gotten at dataBase, which is getting better and more developed every day.”</p>
               </blockquote>
               <figcaption class="mt-10 flex items-center gap-x-6">
                 <img class="h-14 w-14 rounded-full bg-gray-800" src="../assets/JimmyHeadshot.jpg" alt="" />

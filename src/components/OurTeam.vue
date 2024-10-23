@@ -16,7 +16,7 @@ const people = [
     role: 'Co-Founder',
     imageUrl:
       beno,
-    xUrl: 'https://twitter.com/dataBaseBSB',
+    gitHub: 'https://github.com/drewbeno1',
     linkedinUrl: 'https://www.linkedin.com/in/andrewbeno12/',
   },
 ]
@@ -36,10 +36,16 @@ const people = [
             <p class="text-sm leading-6 text-gray-400">{{ person.role }}</p>
             <ul role="list" class="mt-6 flex justify-center gap-x-6">
               <li>
-                <a :href="person.xUrl" class="text-gray-400 hover:text-gray-300" target="_blank">
+                <a v-if="person.xUrl" :href="person.xUrl" class="text-gray-400 hover:text-gray-300" target="_blank">
                   <span class="sr-only">X</span>
                   <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                  </svg>
+                </a>
+                <a v-if="person.gitHub" :href="person.gitHub" class="text-gray-400 hover:text-gray-300" target="_blank">
+                  <span class="sr-only">github</span>
+                  <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 0C4.48 0 0 4.48 0 10c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0110 4.8c.85.004 1.71.11 2.51.32 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0020 10c0-5.52-4.48-10-10-10z"/>
                   </svg>
                 </a>
               </li>
