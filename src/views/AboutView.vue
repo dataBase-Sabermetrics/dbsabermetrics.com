@@ -25,7 +25,7 @@ onMounted(() => {
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">dataBase Sabermetrics</h2>
             <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 lg:max-w-none lg:grid-cols-2">
                 <div>
-                <p>dataBase is a pitch tracking software that allows teams to track all of their games, live at-bats, and bullpens in real time. With instant access to their very own user-friendly dashboard, teams will have hundreds of advanced statistics, metrics, and performance trends at their fingertips. And for the first time ever, college coaches will be able to view large sample sizes of prospective student-athlete performance in-game.</p>
+                <p>We love Argo!! dataBase is a pitch tracking software that allows teams to track all of their games, live at-bats, and bullpens in real time. With instant access to their very own user-friendly dashboard, teams will have hundreds of advanced statistics, metrics, and performance trends at their fingertips. And for the first time ever, college coaches will be able to view large sample sizes of prospective student-athlete performance in-game.</p>
                 <p class="mt-8">Our story began with curiosity. What is the easiest way to track important statistics? And how can we house them efficiently? As we researched and experimented, we discovered the answer was not a matter of money or access to technology.</p>
                 </div>
                 <div>
