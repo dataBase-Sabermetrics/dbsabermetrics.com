@@ -1,25 +1,6 @@
 <script setup>
-import { CheckIcon, CloudArrowUpIcon, DeviceTabletIcon, ChartBarIcon } from '@heroicons/vue/20/solid'
+import { PlusCircleIcon, MinusCircleIcon } from "@vue-hero-icons/outline"
 
-const features = [
-  {
-    name: 'Only 4 Fields to Fill Out for Each Pitch.',
-    description:
-      'We pride ourselves on simplicity. We have created a friction-less pitch tracking software that can be done with ease in real time. ',
-    icon: CheckIcon,
-  },
-  {
-    name: 'Hundreds of Ready to Go Statistics.',
-    description:
-      'dataBase automatically calculates out hundreds of metrics and advanced statistics that can be used to inform player development, and if that is not enough there is the capability to create your own custom statistics',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Mobile Friendly.',
-    description: 'Computer, Phone, Tablet, you name it. Our product is designed to be used on the web on any device.',
-    icon: DeviceTabletIcon,
-  },
-]
 </script>
 
 <template>
@@ -51,11 +32,42 @@ const features = [
       return {
         scrollY: 0,
         timeline: [
-          { title: "V 0.1", description: "+ Team Registration + User Registration + Add Player Feature + Game Tracking (Pitch Type, Velo, Location, Result)" },
-          { title: "V 0.5", description: "" },
-          { title: "V 0.7", description: "Major Features" },
-          { title: "V 0.01", description: "Enhancements" },
-          { title: "V 0.9", description: "Coming Soon" }
+          { 
+          title: "V 0.01", 
+          added: "Excel/Computer Based Pitch Tracking", 
+          icon: PlusCircleIcon,
+          removed: "",
+          icon: MinusCircleIcon,
+          },
+          { 
+          title: "V 0.1", 
+          added: "New Team Registration, User Registration, Add-Player Feature, Game Tracking (Pitch Type, Velo, Location, Result)", 
+          icon: PlusCircleIcon,
+          removed: "Laggy Buttons, Python Requirement to run",
+          icon: MinusCircleIcon,
+          },
+          { 
+          title: "V 0.5", 
+          added: "New User Interface, Pitch Location Tracking, Pitch Type Options",
+          icon: PlusCircleIcon,
+          removed: "",
+          icon: MinusCircleIcon,
+
+          },
+          { 
+          title: "V 0.7", 
+          added: "New User Interface, Home Page (Includes Data Archives), Dashboard, Creation Tabs, Trend Analysis Features",
+          icon: PlusCircleIcon,
+          removed: "",
+          icon: MinusCircleIcon,
+          },
+          { 
+          title: "V 0.9", 
+          added: "New Bullpen Tracking and Analysis!",
+          icon: PlusCircleIcon,
+          removed: "",
+          icon: MinusCircleIcon,
+          }
         ]
       };
     },
