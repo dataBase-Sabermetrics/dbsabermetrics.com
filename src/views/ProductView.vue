@@ -6,8 +6,9 @@ import Roadmap from '../components/Roadmap.vue';
 </script>
 
 <template>
-    <MainLayout>
-        <ProductScreenshot />
-        <ProductInfo />
-    </MainLayout>
+  <MainLayout>
+    <Roadmap />
+    <ProductScreenshot />
+    <ProductInfo />
+  </MainLayout>
 </template>

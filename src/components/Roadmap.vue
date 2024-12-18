@@ -1,5 +1,5 @@
 <script setup>
-import { PlusCircleIcon, MinusCircleIcon } from "@vue-hero-icons/outline"
+import { PlusCircleIcon, MinusCircleIcon } from "@heroicons/vue/20/solid"
 
 </script>
 
