@@ -26,7 +26,7 @@ onMounted(() => {
             <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 lg:max-w-none lg:grid-cols-2">
                 <div>
                 <p>dataBase is a pitch tracking software that allows teams to track all of their games, live at-bats, and bullpens in real time. With instant access to their very own user-friendly dashboard, teams will have hundreds of advanced statistics, metrics, and performance trends at their fingertips. And for the first time ever, college coaches will be able to view large sample sizes of prospective student-athlete performance in-game.</p>
-                <p class="mt-8">Our story began with curiosity. What is the easiest way to track important statistics? And how can we house them efficiently? As we researched and experimented, we discovered the answer was not a matter of money or access to technology.</p>
+                <p class="mt-8">Our story began with curiosity. What is the easiest way to track important statistics? And how can we house them efficiently? As we researched and experimented, we discovered the answer was not a matter of money or access to technology - but of practicality and simplicity.</p>
                 </div>
                 <div>
                 <p>We have developed a one-of-a-kind application that is easy to use and affordable for any program, coach, or aspiring baseball professional to access. We've changed how advanced statistics are tracked and we are proud to share our methodology with those who are passionate about pursuing their best product on the field. With dataBase, we have now learned how we can track trends in our players' performances and use them to coach them up. </p>
