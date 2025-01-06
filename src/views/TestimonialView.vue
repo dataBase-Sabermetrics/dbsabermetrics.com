@@ -8,7 +8,7 @@ import MainLayout from '../layouts/MainLayout.vue';
       <div class="mx-auto max-w-7xl px-6 space-y-20 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-            <img class="h-12 self-start" src="../assets/spider.png" alt="" />
+            <img class="h-12 self-start" src="../assets/Spider.png" alt="" />
             <figure class="mt-6 flex flex-auto flex-col justify-between">
               <blockquote class="text-lg leading-8 text-white">
                 <p>
