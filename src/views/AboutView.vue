@@ -18,6 +18,10 @@ onMounted(() => {
 
 <template>
     <MainLayout>
+      <OurTeam />
+      <div class="arrow" v-show="showArrow">
+          <span class="arrow-bounce">&#8595;</span>
+      </div>
       <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
@@ -42,10 +46,6 @@ onMounted(() => {
             </div>
         </div>
       </div>
-      <div class="arrow" v-show="showArrow">
-          <span class="arrow-bounce">&#8595;</span>
-      </div>
-      <OurTeam />
     </MainLayout>
   </template>
 

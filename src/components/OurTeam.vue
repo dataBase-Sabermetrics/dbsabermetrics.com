@@ -6,6 +6,7 @@ const people = [
   {
     name: 'Brenden Argomaniz',
     role: 'Co-Founder',
+    job: 'MiLB Red Sox Pitching Coach',
     imageUrl:
       argo,
     xUrl: 'https://twitter.com/b_argomaniz',
@@ -14,6 +15,7 @@ const people = [
   {
     name: 'Drew Beno',
     role: 'Co-Founder',
+    job: 'Software Engineer',
     imageUrl:
       beno,
     gitHub: 'https://github.com/drewbeno1',
@@ -33,7 +35,7 @@ const people = [
           <li v-for="person in people" :key="person.name" class="rounded-2xl bg-gray-800 px-8 py-10">
             <img class="mx-auto h-48 w-42 rounded-full md:h-56 md:w-50" :src="person.imageUrl" alt="" />
             <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-white">{{ person.name }}</h3>
-            <p class="text-sm leading-6 text-gray-400">{{ person.role }}</p>
+            <p class="text-sm leading-6 text-gray-400">{{ person.job }}</p>
             <ul role="list" class="mt-6 flex justify-center gap-x-6">
               <li>
                 <a v-if="person.xUrl" :href="person.xUrl" class="text-gray-400 hover:text-gray-300" target="_blank">
