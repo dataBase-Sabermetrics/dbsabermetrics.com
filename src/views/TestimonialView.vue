@@ -12,7 +12,7 @@ import MainLayout from '../layouts/MainLayout.vue';
             <figure class="mt-6 flex flex-auto flex-col justify-between">
               <blockquote class="text-lg leading-8 text-white">
                 <p>
-                “dataBase is a fantastic application that has brought statistical insights to to my game that I have never thought were possible. From a college player’s perspective, it is critical to understand where you stand and what kind of player you are to grow and get better…. with dataBase this process becomes simple. I believe the introduction of dataBase to any program will result in positive outcomes”  
+                “dataBase is a fantastic application that has brought statistical insights to my game that I have never thought were possible. From a college player’s perspective, it is critical to understand where you stand and what kind of player you are to grow and get better…. with dataBase this process becomes simple. I believe the introduction of dataBase to any program will result in positive outcomes”  
                 </p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-6">
@@ -29,7 +29,7 @@ import MainLayout from '../layouts/MainLayout.vue';
             <figure class="mt-6 flex flex-auto flex-col justify-between">
               <blockquote class="text-lg leading-8 text-white">
                 <p>
-                "In-Depth Bullpen Analysis is a new, cutting-edge analytics tool in the baseball world right now, and dataBase is making it a simple, yet powerful process. This tool has given us the insight we need to make important decisions about our roster and the way we use it. If it weren't for dataBase, our development timeline for our players would be way behind where it's at now."
+                "In-Depth Bullpen Analysis is a new, cutting-edge analytics tool in the baseball world right now, and dataBase is making it a simple, yet powerful process. This tool gives the insight needed to make important decisions about rosters and the way they are managed. If it weren't for dataBase, development timelines for some players I have seen would be way behind where they are now."
                 </p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-6">
