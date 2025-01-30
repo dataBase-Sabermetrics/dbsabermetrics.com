@@ -1,8 +1,18 @@
 <script setup>
 import argo from '../assets/argo.jpeg';
 import beno from '../assets/Beno.jpeg';
+import reinke from '../assets/reinkehead.jpg';
 
 const people = [
+  {
+    name: 'Drew Beno',
+    role: 'Co-Founder',
+    job: 'Software Engineer',
+    imageUrl:
+      beno,
+    gitHub: 'https://github.com/drewbeno1',
+    linkedinUrl: 'https://www.linkedin.com/in/andrewbeno12/',
+  },
   {
     name: 'Brenden Argomaniz',
     role: 'Co-Founder',
@@ -13,13 +23,13 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/brenden-argomaniz/',
   },
   {
-    name: 'Drew Beno',
-    role: 'Co-Founder',
-    job: 'Software Engineer',
+    name: 'Brian Reinke',
+    role: 'Data Engineer',
+    job: 'Data Engineer',
     imageUrl:
-      beno,
-    gitHub: 'https://github.com/drewbeno1',
-    linkedinUrl: 'https://www.linkedin.com/in/andrewbeno12/',
+      reinke,
+    gitHub: 'https://github.com/breinke27',
+    linkedinUrl: 'https://www.linkedin.com/in/brianreinke21/',
   },
 ]
 </script>
