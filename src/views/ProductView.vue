@@ -2,11 +2,13 @@
 import MainLayout from '../layouts/MainLayout.vue';
 import ProductScreenshot from '../components/ProductScreenshot.vue';
 import ProductInfo from '../components/ProductInfo.vue';
+import Roadmap from '../components/Roadmap.vue';
 </script>
 
 <template>
-    <MainLayout>
-        <ProductScreenshot />
-        <ProductInfo />
-    </MainLayout>
+  <MainLayout>
+    <Roadmap />
+    <ProductScreenshot />
+    <ProductInfo />
+  </MainLayout>
 </template>
