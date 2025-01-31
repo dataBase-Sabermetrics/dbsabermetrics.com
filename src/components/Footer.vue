@@ -3,8 +3,8 @@ import { defineComponent, h } from 'vue'
 
 const navigation = {
   support: [
-    { name: 'Contact', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
-    { name: 'Tutorials', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
+    { name: '...', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
+    { name: 'Contact', href: '/contact/' },
   ],
   social: [
     {
@@ -97,7 +97,7 @@ const navigation = {
                 <h3 class="text-md md:text-sm font-semibold leading-6 text-white">Support</h3>
                 <ul role="list" class="mt-2 space-y-2">
                   <li v-for="item in navigation.support" :key="item.name">
-                    <a :href="item.href" class="text-md md:text-sm text-gray-200 hover:text-white" target="_blank">{{ item.name }}</a>
+                    <a :href="item.href" class="text-md md:text-sm text-gray-200 hover:text-white">{{ item.name }}</a>
                   </li>
                 </ul>
               </div>
