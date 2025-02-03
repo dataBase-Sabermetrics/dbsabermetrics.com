@@ -3,15 +3,15 @@ import { CheckIcon, CloudArrowUpIcon, DeviceTabletIcon, ChartBarIcon } from '@he
 
 const features = [
   {
-    name: 'Only 4 Fields to Fill Out for Each Pitch.',
+    name: 'Simple, 4 field In-Game Tracking',
     description:
       'We pride ourselves on simplicity. We have created a friction-less pitch tracking software that can be done with ease in real time. ',
     icon: CheckIcon,
   },
   {
-    name: 'Hundreds of Ready to Go Statistics.',
+    name: 'Bullpen Intended Location Tracking',
     description:
-      'dataBase automatically calculates out hundreds of metrics and advanced statistics that can be used to inform player development, and if that is not enough there is the capability to create your own custom statistics',
+      'Pitchers throw a lot of bullpens, and it is too easy to forget about them and move on without learning from them. Tracking your bullpens and the intended location of each pitch is a critical tool for player development.',
     icon: ChartBarIcon,
   },
   {
@@ -45,7 +45,10 @@ const features = [
               </dl>
             </div>
           </div>
-          <img src="../assets/TrackScreenshot.png" alt="Product screenshot" class="w-[35rem] mt-10 max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+          <div class="flex flex-col">
+          <img src="../assets/TrackScreenshot.png" alt="Product screenshot" class="mt-10 max-w-2xl xl:max-w-3xl rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+          <img src="../assets/PenScreenshot.png" alt="Product screenshot" class="mt-2 max-w-2xl xl:max-w-3xl rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+          </div>
         </div>
       </div>
     </div>
