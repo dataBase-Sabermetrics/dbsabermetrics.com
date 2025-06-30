@@ -28,7 +28,7 @@ const handleSubmit = async () => {
     const axiosConfig = {
         headers: {
             "Content-Type": "text/plain",
-            "X-API-Key": `${API_KEY}`
+            "X-API-KEY": `${API_KEY}`
         }
     };
 
