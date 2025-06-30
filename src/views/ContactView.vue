@@ -5,6 +5,7 @@ import MainLayout from '../layouts/MainLayout.vue';
 import Popup from '../components/Popup.vue';
 
 const API_KEY = import.meta.env.VITE_API_KEY
+const ESTEBAN_URL = import.meta.env.VITE_CYBER_ESTEBAN
 
 const open = ref(false);
 
@@ -33,7 +34,7 @@ const handleSubmit = async () => {
 
     try {
         await axios.post(
-            `/api`,
+            `${ESTEBAN_URL}/api`,
             `New Contact Form 🚀 \nFirst: ${formData.value.first} \nLast: ${formData.value.last} \nTeam: ${formData.value.team} \nEmail: ${formData.value.email} \nMessage: ${formData.value.message}`,
             axiosConfig
         ).catch(error => {
