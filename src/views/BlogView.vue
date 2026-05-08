@@ -1,7 +1,24 @@
 <script setup>
 import MainLayout from '../layouts/MainLayout.vue';
 import argo from '../assets/argo.jpeg';
+import beno from '../assets/Beno.jpeg';
 const posts = [
+   {
+     id: 2,
+     title: 'The Case for Building It Yourself',
+     href: 'https://wedgworth.dev/the-case-for-building-it-yourself/',
+     description:
+       'Drew Beno recounts his transition from data science to software engineering at Wedgworth, a custom fertilizer company. He argues that building technology solutions in-house provides two key advantages: opportunity for growth when employees have more paths of work available and cultivating a sense of ownership across the entire organization.',
+     date: 'Nov 12, 2025',
+     datetime: '2025-11-12',
+     category: { title: 'wedgworth.dev', href: 'https://wedgworth.dev/the-case-for-building-it-yourself/' },
+     author: {
+       name: 'Drew Beno',
+       role: 'Co-Founder, Full-Stack Developer',
+       href: '/about/',
+       imageUrl: beno,
+     },
+   },
    {
      id: 1,
      title: 'Why You Should Aim to Quantify Projectability Beyond High School',
