@@ -106,7 +106,7 @@ const navigation = {
         </div>
         <p class="text-sm text-gray-400 mt-6">And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him. Colossians 3:17</p>
         <div class="border-t border-white/10 pt-6 mt-6">
-          <p class="text-xs leading-5 text-gray-400">&copy; 2024 dataBase Sabermetrics, LLC. All rights reserved.</p>
+          <p class="text-xs leading-5 text-gray-400">&copy; 2026 dataBase Sabermetrics, LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
