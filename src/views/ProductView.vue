@@ -7,9 +7,11 @@ import ProductInfo from '../components/ProductInfo.vue';
 <template>
     <MainLayout>
         <ProductScreenshot />
-        <div class="flex flex-col space-y-3 lg:flex-row lg:space-y-0 lg:space-x-3 text-center mx-12">
-          <img src="../assets/DashScreenshot.png" alt="Product screenshot" class="max-w-2xl xl:max-w-3xl rounded-xl shadow-xl" />
-          <img src="../assets/DashScreenshot2.png" alt="Product screenshot" class="max-w-2xl xl:max-w-3xl rounded-xl shadow-xl" />
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <img src="../assets/DashScreenshot.png" alt="Dashboard screenshot" class="w-full rounded-xl shadow-xl ring-1 ring-white/10" />
+            <img src="../assets/DashScreenshot2.png" alt="Dashboard screenshot" class="w-full rounded-xl shadow-xl ring-1 ring-white/10" />
+          </div>
         </div>
         <ProductInfo />
     </MainLayout>

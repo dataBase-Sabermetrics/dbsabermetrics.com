@@ -1,27 +1,13 @@
 <script setup>
-import { ref, onMounted } from 'vue';
 import MainLayout from '../layouts/MainLayout.vue';
-import OurTeam from '../components/OurTeam.vue';
 const stats = [
 //   { label: 'Our Mission', value: 'We seek to make baseball’s analytical revolution accessible to everyone'},
   { label: 'Founded', value: '2024' },
 ]
-
-const showArrow = ref(true);
-
-onMounted(() => {
-    window.addEventListener('scroll', () => {
-        showArrow.value = window.pageYOffset === 0;
-    });
-});
 </script>
 
 <template>
     <MainLayout>
-      <OurTeam />
-      <div class="arrow" v-show="showArrow">
-          <span class="arrow-bounce">&#8595;</span>
-      </div>
       <div class="py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">

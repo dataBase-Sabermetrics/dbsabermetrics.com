@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Testimonials', href: '/testimonials/' },
   { name: 'Blog', href: '/blog/' },
   // { name: 'Signup', href: '/pricing/' },
-  { name: 'Contact', href: '/contact/' },
+  { name: 'Sign Up', href: '/contact/' },
 ]
 
 const mobileMenuOpen = ref(false)

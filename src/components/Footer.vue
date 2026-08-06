@@ -4,7 +4,7 @@ import { defineComponent, h } from 'vue'
 const navigation = {
   support: [
     { name: '...', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
-    { name: 'Contact', href: '/contact/' },
+    { name: 'Sign Up', href: '/contact/' },
   ],
   social: [
     {
