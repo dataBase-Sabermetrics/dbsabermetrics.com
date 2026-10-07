@@ -1,26 +1,77 @@
 <script setup>
-  import MainLayout from '../layouts/MainLayout.vue';
-  import Footer from '../components/Footer.vue';
+import MainLayout from '../layouts/MainLayout.vue';
+import Footer from '../components/Footer.vue';
+import { BoltIcon, EnvelopeIcon, DevicePhoneMobileIcon } from '@heroicons/vue/24/outline'
+
+const highlights = [
+  {
+    icon: BoltIcon,
+    title: 'Live pitch tracking',
+    text: 'Log every pitch in real time — simple enough for any volunteer scorer.',
+  },
+  {
+    icon: EnvelopeIcon,
+    title: 'Reports delivered to players',
+    text: 'Post-game PDFs hit each pitcher\'s inbox the moment the game ends.',
+  },
+  {
+    icon: DevicePhoneMobileIcon,
+    title: 'Works on any device',
+    text: 'Phone, tablet, or laptop — no app download required.',
+  },
+]
 </script>
 
 <template>
   <MainLayout>
-      <div class="py-24 sm:py-32 lg:pb-40">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Player Development Redefined</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-300">DataBase Sabermetrics delivers the intuitive pitch-tracking software and advanced analytics needed to bring your team to the next level. Get in the game, click below to get started!</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="/contact/" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">See pricing</a>
-              <a href="/product/" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
-            </div>
+    <!-- Hero -->
+    <div class="py-28 sm:py-40 lg:pb-48">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h1 class="text-5xl font-bold tracking-tight text-white sm:text-7xl">
+            Player development,<br />
+            <span class="text-indigo-400">powered by data.</span>
+          </h1>
+          <p class="mt-8 text-xl leading-8 text-gray-300">
+            dataBase Sabermetrics delivers intuitive pitch-tracking software and advanced analytics needed to bring your team to the next level. Get in the game, click below to get started!
+          </p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="/contact/"
+              class="rounded-md bg-indigo-500 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+            >
+              Get started free
+            </a>
+            <a href="/product/" class="text-sm font-semibold leading-6 text-white">
+              See the features <span aria-hidden="true">→</span>
+            </a>
           </div>
-          <img src="../assets/DashboardScreenshot.png" alt="App screenshot" width="2432" height="1442" class=" opacity-95 mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24" />
+        </div>
+
+        <img
+          src="../assets/DashboardScreenshot.png"
+          alt="dataBase analytics dashboard"
+          width="2432"
+          height="1442"
+          class="mt-16 rounded-xl shadow-2xl ring-1 ring-white/10 sm:mt-24"
+        />
+      </div>
+    </div>
+
+    <!-- Feature highlights -->
+    <div class="border-t border-white/10 py-20">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 sm:grid-cols-3">
+          <div v-for="item in highlights" :key="item.title" class="flex flex-col items-start">
+            <div class="rounded-lg bg-indigo-500/10 p-3 ring-1 ring-indigo-500/30">
+              <component :is="item.icon" class="h-6 w-6 text-indigo-400" />
+            </div>
+            <h3 class="mt-4 text-base font-semibold text-white">{{ item.title }}</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-400">{{ item.text }}</p>
+          </div>
         </div>
       </div>
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-      </div>
+    </div>
   </MainLayout>
   <Footer />
 </template>

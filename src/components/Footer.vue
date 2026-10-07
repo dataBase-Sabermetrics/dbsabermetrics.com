@@ -3,8 +3,8 @@ import { defineComponent, h } from 'vue'
 
 const navigation = {
   support: [
-    { name: '...', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
-    { name: 'Sign Up', href: '/contact/' },
+    { name: 'Tutorials', href: 'https://www.youtube.com/@dataBaseSabermetrics' },
+    { name: 'Contact Us', href: '/contact/' },
   ],
   social: [
     {
